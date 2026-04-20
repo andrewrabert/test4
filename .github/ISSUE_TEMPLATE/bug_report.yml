@@ -13,9 +13,9 @@ body:
       options:
         - label: I have read the [Reporting Bugs](https://github.com/jellyfin/jellyfin-desktop/wiki/Reporting-Bugs) guide.
           required: true
-        - label: I will disclose any use of custom styles or non-official plugins (those not provided by https://repo.jellyfin.org/).
+        - label: I acknowledge that the version of Jellyfin Desktop I'm reporting for starts with `3.0.0-dev`
           required: true
-        - label: I am running a version that starts with `3.0.0`, as per the [Reporting Bugs](https://github.com/jellyfin/jellyfin-desktop/wiki/Reporting-Bugs) guide.
+        - label: I will disclose any use of custom styles or plugins that alter the web appearance.
           required: true
   - type: input
     id: version
