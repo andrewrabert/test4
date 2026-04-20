@@ -1,0 +1,77 @@
+name: Bug report
+description: Create a report to help us improve
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, please read the [Reporting Bugs](https://github.com/jellyfin/jellyfin-desktop/wiki/Reporting-Bugs) guide.
+  - type: checkboxes
+    id: read-guide
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have read the [Reporting Bugs](https://github.com/jellyfin/jellyfin-desktop/wiki/Reporting-Bugs) guide.
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: install-method
+    attributes:
+      label: Installation method
+      placeholder: e.g. AppImage, Flatpak, built from source
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Linux / Wayland
+        - Linux / X11
+        - macOS
+        - Windows
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: e.g. Fedora 41, Windows 11, macOS 15
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      placeholder: e.g. AMD RX 7800 XT, Intel Arc A770, NVIDIA RTX 4080
+    validations:
+      required: true
+  - type: dropdown
+    id: third-party
+    attributes:
+      label: Are you using custom styles or plugins not provided by https://repo.jellyfin.org/?
+      options:
+        - 'No'
+        - 'Yes'
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Screenshots, logs, or any other relevant information.
